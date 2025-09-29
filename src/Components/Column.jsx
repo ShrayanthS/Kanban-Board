@@ -1,6 +1,6 @@
 import React from 'react'
 import { useBoard } from '../BoardContext';
-import Task from './Task';
+import Task from './Task'
 
 export default function Column({column}) {
     const {dispatch} = useBoard();

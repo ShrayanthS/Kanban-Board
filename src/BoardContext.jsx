@@ -12,7 +12,7 @@ export function useBoard() {
 
 export function BoardProvider({children}){
 
-    const [state, dispatch] = useReducer(boardReducer, initialBoard);
+    const [state, dispatch] = useReducer(boardReducer, initialBoard)
     return(
         <BoardContext.Provider value={{state, dispatch}}>
             {children}
