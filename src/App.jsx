@@ -2,7 +2,7 @@ import React from 'react'
 import { BoardProvider } from './BoardContext'
 import Board from './Components/Board'
 
-function App() {
+export default function App() {
   return (
     <div>
       <BoardProvider>
@@ -12,4 +12,4 @@ function App() {
   )
 }
 
-export default App
+
