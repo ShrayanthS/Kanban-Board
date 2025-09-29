@@ -4,25 +4,25 @@
 }
 
 .todo{
-  background-color: rgb(250, 130, 109);
+  background-color: rgb(165, 219, 195);
   color: white;
   height: 500px;
   width: 200px;
 }
 .inprog{
-  background-color: rgb(144, 238, 246);
+  background-color: rgb(213, 233, 166);
   color: white;
   height: 500px;
   width: 200px;
 }
 .done{
-  background-color: rgb(225, 171, 248);
+  background-color: rgb(158, 139, 141);
   color: white;
   height: 500px;
   width: 200px;
 }
 .bin{
-  background-color: rgb(253, 131, 147);
+  background-color: rgb(105, 130, 154);
   color: white;
   height: 500px;
   width: 200px;
