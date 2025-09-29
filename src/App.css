@@ -1,0 +1,29 @@
+.list{
+  display: flex;
+  gap: 20px;
+}
+
+.todo{
+  background-color: rgb(250, 130, 109);
+  color: white;
+  height: 500px;
+  width: 200px;
+}
+.inprog{
+  background-color: rgb(144, 238, 246);
+  color: white;
+  height: 500px;
+  width: 200px;
+}
+.done{
+  background-color: rgb(225, 171, 248);
+  color: white;
+  height: 500px;
+  width: 200px;
+}
+.bin{
+  background-color: rgb(253, 131, 147);
+  color: white;
+  height: 500px;
+  width: 200px;
+}

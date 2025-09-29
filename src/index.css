@@ -1,0 +1,155 @@
+body {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  padding: 40px;
+  background: url('https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-56228.jpg?semt=ais_hybrid&w=740&q=80') no-repeat center center fixed ;
+  background-size: cover;
+  font-family: "Orbitron", sans-serif;
+  backdrop-filter: blur(25px);
+
+}
+
+.add-task {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.add-task input {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 2px solid #e04e4e;
+  outline: none;
+  width: 280px;
+  font-size: 14px;
+}
+
+.add-task button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #e04e4e;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.add-task button:hover {
+  background: #c93e3e;
+}
+
+.board {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+ 
+}
+
+.column {
+  flex: 1;
+  width:200px;;
+  min-height: 400px;
+  background: #7c7c941d;
+  backdrop-filter:blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  box-shadow:0px 5px 10px 2px rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 1.5rem;
+  transition: transform 2s ease, box-shadow 2s ease;
+}
+.column:hover{
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(255, 0, 0, 0.5);
+}
+
+.column h2 {
+  color: rgb(245, 222, 172);
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  letter-spacing: 2px;
+  animation: glow 2s infinite;
+  text-shadow: 0 0 10px rgb(245, 149, 31), 0 0 20px rgb(255, 96, 4);
+}
+@keyframes glow{
+  0%{text-shadow: 0 0 5px red, 0 0 10px red }
+  50%{text-shadow: 0 0 5px rgb(255, 225, 0), 0 0 10px red }
+  100%{text-shadow: 0 0 5px red, 0 0 10px red }
+}
+
+.task {
+  background: rgba(255, 0, 0, 0.5);
+  border: 3px solid #d7d8e3;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 8px 0;
+  color: white;
+  font-size: 14px;
+  cursor: grab;
+  box-shadow: 2px 2px 8px rgba(20px,0,0,0.15);
+}
+.task:hover{
+  transform: scale(1.1);
+  box-shadow: 10px 10px 50px 20px rgba(0, 0, 0, 0.2);
+}
+.task:active {
+  cursor: grabbing;
+}
+.ipbox{
+  border-radius: 20px;
+  padding: 2px;
+  width: 900px;
+  height: 35px;
+}
+.trash-bin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px dashed rgb(242, 239, 239);
+  border-radius: 10px;
+
+  background-color: rgba(255, 0, 0, 0.2); /* light red bg */
+  color: white;
+  width: 200px;
+  height: 400px;
+  margin: 20px auto;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.trash-bin:hover {
+  background-color: rgba(150, 99, 99, 0.5);
+  transform: scale(1.05);
+}
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(255, 0, 0, 0.5));
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 0 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, rgba(255, 0, 0, 0.5));
+}
+
+.button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
